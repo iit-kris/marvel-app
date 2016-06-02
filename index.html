@@ -3,6 +3,7 @@
 <head>
     <title>Hello World, AngularJS - ViralPatel.net</title>
     <link style="text/css" rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link style="text/css" rel="stylesheet" href="app/styles/custom.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 
 </head>
@@ -14,6 +15,7 @@
         <ul class="nav nav-tabs">
             <li><a href="#">Home</a></li>
             <li><a href="#characters">Characters</a></li>
+            <li><a href="#series">Series</a></li>
         </ul>
     </nav>
 </div>
@@ -21,9 +23,13 @@
 <div ng-view></div>
 
 <script type="text/javascript" src="app/scripts/app.js"></script>
+
 <script type="text/javascript" src="app/scripts/service.js"></script>
+<script type="text/javascript" src="app/scripts/services/series-svc.js"></script>
+
 <script type="text/javascript" src="app/scripts/controllers/home.js"></script>
 <script type="text/javascript" src="app/scripts/controllers/character.js"></script>
+<script type="text/javascript" src="app/scripts/controllers/series.js"></script>
 
 </body>
 </html>

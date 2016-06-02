@@ -1,0 +1,7 @@
+<div class="list-group series">
+    <a class="list-group-item" ng-repeat="seriesEntry in series">
+        <img width="100px" height="100px" src="{{seriesEntry.thumbnail.path}}.jpg" />
+        <h4 class="list-group-item-heading">{{ seriesEntry.title }}</h4>
+        <p class="list-group-item-text">{{seriesEntry.rating}}</p>
+    </a>
+</div>
