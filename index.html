@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World, AngularJS - ViralPatel.net</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+</head>
+<body ng-app="marvelApp">
+
+<div class="container">
+    MARVEL APP!
+    <nav>
+        <ul>
+            <li><a href="#characters">Characters</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div ng-view></div>
+
+<script type="text/javascript" src="app/scripts/app.js"></script>
+<script type="text/javascript" src="app/scripts/service.js"></script>
+<script type="text/javascript" src="app/scripts/controllers/home.js"></script>
+<script type="text/javascript" src="app/scripts/controllers/character.js"></script>
+
+</body>
+</html>

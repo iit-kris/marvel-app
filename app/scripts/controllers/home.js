@@ -1,0 +1,3 @@
+marvelApp.controller('HomeController', function() {
+
+});
