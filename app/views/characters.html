@@ -1,13 +1,8 @@
 <div>
-    <h3>Heroes List</h3>
-    <table>
-        <tr ng-repeat="character in characters">
-            <td>
-                <img src="{{character.thumbnail.path}}/portrait_small.{{character.thumbnail.extension}}">
-            </td>
-            <td>
-                <a href="#/character_details/{{character.id}}">{{ character.name }}</a>
-            </td>
-        </tr>
-    </table>
+    <div class="list-group">
+        <a href="#/character_details/{{character.id}}" class="list-group-item" ng-repeat="character in characters">
+            <img src="{{character.thumbnail.path}}/portrait_small.{{character.thumbnail.extension}}">
+            <h4 class="list-group-item-heading">{{ character.name }}</h4>
+        </a>
+    </div>
 </div>

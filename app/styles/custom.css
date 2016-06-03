@@ -3,6 +3,9 @@
 .list-group-item {
     height: 130px;
 }
+.list-group-item-short {
+    height: 40px;
+}
 .list-group-item > img {
     position: absolute;
 }

@@ -1,14 +1,31 @@
 <div ng-controller="CharacterDetailsController">
+    <h3>{{ characterDetails[0].name }}</h3>
     <img src="{{characterDetails[0].thumbnail.path}}/portrait_incredible.{{characterDetails[0].thumbnail.extension}}">
-    <table>
-        <tr>
-            <td>name</td>
-            <td>{{ characterDetails[0].name }}</td>
-        </tr>
-        <tr>
-            <td>description</td>
-            <td>{{ characterDetails[0].description }}</td>
-        </tr>
-    </table>
+    <h4>description</h4>
+    <p>{{ characterDetails[0].description }}</p>
+    <h4>Comics</h4>
+    <ul class="list-group">
+        <li class="list-group-item-short" ng-repeat="comic in characterDetails[0].comics.items">
+            {{comic.name}}
+        </li>
+    </ul>
+    <h4>Stories</h4>
+    <ul class="list-group">
+        <li class="list-group-item-short" ng-repeat="story in characterDetails[0].stories.items">
+            {{story.name}}
+        </li>
+    </ul>
+    <h4>Events</h4>
+    <ul class="list-group">
+        <li class="list-group-item-short" ng-repeat="event in characterDetails[0].events.items">
+            {{event.name}}
+        </li>
+    </ul>
+    <h4>Series</h4>
+    <ul class="list-group">
+        <li class="list-group-item-short" ng-repeat="series in characterDetails[0].series.items">
+            {{series.name}}
+        </li>
+    </ul>
 
 </div>
