@@ -8,4 +8,8 @@ marvelApp.service('CharacterService', function($http) {
    this.fetchCharacters = function() {
      return $http.get(this.basePath + '/v1/public/characters', {params: this.standardParams});
    };
+
+    this.fetchCharacterDetails = function (caracterId) {
+        return $http.get(this.basePath + '/v1/public/characters/'+caracterId, {params: this.standardParams});
+    };
 });

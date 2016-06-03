@@ -1,0 +1,14 @@
+<div ng-controller="CharacterDetailsController">
+    <img src="{{characterDetails[0].thumbnail.path}}/portrait_incredible.{{characterDetails[0].thumbnail.extension}}">
+    <table>
+        <tr>
+            <td>name</td>
+            <td>{{ characterDetails[0].name }}</td>
+        </tr>
+        <tr>
+            <td>description</td>
+            <td>{{ characterDetails[0].description }}</td>
+        </tr>
+    </table>
+
+</div>

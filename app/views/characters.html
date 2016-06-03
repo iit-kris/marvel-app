@@ -1,7 +1,13 @@
 <div>
     <h3>Heroes List</h3>
-    <ul>
-        <li ng-repeat="character in characters"> {{ character.name }} </li>
-    </ul>
-
+    <table>
+        <tr ng-repeat="character in characters">
+            <td>
+                <img src="{{character.thumbnail.path}}/portrait_small.{{character.thumbnail.extension}}">
+            </td>
+            <td>
+                <a href="#/character_details/{{character.id}}">{{ character.name }}</a>
+            </td>
+        </tr>
+    </table>
 </div>
