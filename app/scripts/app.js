@@ -11,6 +11,9 @@ marvelApp.config(function ($httpProvider) {
     }).when('/characters', {
         templateUrl: 'app/views/characters.html',
         controller: 'CharacterController'
+    }).when('/character_details/:characterId', {
+        templateUrl: 'app/views/character_details.html',
+        controller: 'CharacterDetailsController'
     }).otherwise({
        redirectTo: '/characters'
     });
