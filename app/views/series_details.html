@@ -1,0 +1,30 @@
+<div>
+    <h3>{{series.title}}</h3>
+    <img src="{{series.thumbnail.path}}.{{series.thumbnail.extension}}" />
+    <h4 ng-show="!!series.description">Description</h4>
+    <p ng-show="!!series.description">{{series.description}}</p>
+    <h4>Comics</h4>
+    <ul class="list-group">
+        <li class="list-group-item-short" ng-repeat="comic in series.comics.items">
+            {{comic.name}}
+        </li>
+    </ul>
+    <h4 ng-show="series.stories.available > 0">Stories</h4>
+    <ul class="list-group" ng-show="series.stories.available > 0">
+        <li class="list-group-item-short" ng-repeat="story in series.stories.items">
+            {{story.name}}
+        </li>
+    </ul>
+    <h4 ng-show="series.events.available > 0">Events</h4>
+    <ul class="list-group" ng-show="series.events.available > 0">
+        <li class="list-group-item-short" ng-repeat="event in series.events.items">
+            {{event.name}}
+        </li>
+    </ul>
+    <h4 ng-show="series.characters.available > 0">Characters</h4>
+    <ul class="list-group"  ng-show="series.characters.available > 0">
+        <li class="list-group-item-short" ng-repeat="character in series.characters.items">
+            {{character.name}}
+        </li>
+    </ul>
+</div>

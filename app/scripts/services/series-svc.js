@@ -8,5 +8,8 @@ marvelApp.service('SeriesService', function($http) {
     },
     this.fetchSeries = function() {
         return $http.get(this.basePath + '/v1/public/series', {params: this.standardParams});
+    },
+    this.fetchSeriesDetails = function(seriesId) {
+        return $http.get(this.basePath + '/v1/public/series/' + seriesId, {params: this.standardParams});
     };
 });
