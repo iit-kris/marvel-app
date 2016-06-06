@@ -1,3 +1,32 @@
+@font-face {
+    font-family: 'TradeGothicBold';
+    src: url('../fonts/TradeGothicLTStd-Bold.otf');
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/Bebas.ttf');
+}
+/*
+.logo {
+    font-size: 24px;
+    font-family: 'Bebas';
+    background-color: #f0141e;
+    padding: 5px;
+    line-height: 115%;
+    color: #ffffff;
+    position: relative;
+    text-shadow: 1px 1px 1px #c40d15;
+}
+.nav {
+    background-color: #2e2e2e;
+    position: relative;
+}
+.nav-tabs > li > a {
+    font-family: 'TradeGothicBold';
+    text-transform: uppercase;
+    color: #b5b5b5;
+}
+*/
 .list-group {
 }
 .list-group-item {
