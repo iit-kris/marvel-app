@@ -2,7 +2,8 @@
     <div class="list-group">
         <a href="#/character_details/{{character.id}}" class="list-group-item" ng-repeat="character in characters">
             <img src="{{character.thumbnail.path}}/portrait_small.{{character.thumbnail.extension}}">
-            <h4 class="list-group-item-heading">{{ character.name }}</h4>
+            <h3 class="list-group-item-heading">{{ character.name }}</h3>
+            <p class="list-group-item-text">{{ character.description }}</p>
         </a>
     </div>
 </div>
