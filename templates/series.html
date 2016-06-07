@@ -1,0 +1,11 @@
+<div>
+    <h4 ng-show="detailedList && detailedList.length > 0">Series</h4>
+    <div ng-show="detailedList && detailedList.length > 0" class="row">
+        <div class="col-xs-12 col-sm-4" ng-repeat="series in detailedList"}}>
+            <a href="#/series_details/{{series.id}}" class="thumbnail">
+                <img data-ng-src="{{series.thumbnail.path}}.{{series.thumbnail.extension}}" alt="{{series.name}}" /> {{series.name}}
+            </a>
+
+        </div>
+    </div>
+</div>

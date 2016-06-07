@@ -1,31 +1,14 @@
 <div ng-controller="CharacterDetailsController">
-    <h3>{{ characterDetails[0].name }}</h3>
-    <img src="{{characterDetails[0].thumbnail.path}}/portrait_incredible.{{characterDetails[0].thumbnail.extension}}">
+    <h3>{{ character.name }}</h3>
+    <img data-ng-src="{{character.thumbnail.path}}/portrait_incredible.{{character.thumbnail.extension}}">
     <h4>Description</h4>
-    <p>{{ characterDetails[0].description }}</p>
-    <h4>Comics</h4>
-    <ul class="list-group">
-        <li class="list-group-item-short" ng-repeat="comic in characterDetails[0].comics.items">
-            {{comic.name}}
-        </li>
-    </ul>
-    <h4>Stories</h4>
-    <ul class="list-group">
-        <li class="list-group-item-short" ng-repeat="story in characterDetails[0].stories.items">
-            {{story.name}}
-        </li>
-    </ul>
-    <h4>Events</h4>
-    <ul class="list-group">
-        <li class="list-group-item-short" ng-repeat="event in characterDetails[0].events.items">
-            {{event.name}}
-        </li>
-    </ul>
-    <h4>Series</h4>
-    <ul class="list-group">
-        <li class="list-group-item-short" ng-repeat="series in characterDetails[0].series.items">
-            {{series.name}}
-        </li>
-    </ul>
+    <p>{{ character.description }}</p>
+
+
+    <div data-comics data-detailed-list="character.comicsDetailed"></div>
+    <div data-events data-detailed-list="character.eventsDetailed"></div>
+    <div data-stories data-detailed-list="character.storiesDetailed"></div>
+    <div data-series data-detailed-list="character.seriesDetailed"></div>
+
 
 </div>
