@@ -13,7 +13,21 @@ marvelApp.service('CharacterService', function($http) {
         return $http.get(this.basePath + '/v1/public/characters/'+caracterId, {params: this.standardParams});
     };
 
-    this.fetchCharacterDetails = function (caracterId) {
-        return $http.get(this.basePath + '/v1/public/characters/'+caracterId, {params: this.standardParams});
+    this.fetchCharacterComics = function(characterId) {
+        return $http.get(this.basePath + '/v1/public/characters/' + characterId + '/comics', {params: this.standardParams});
+
     };
+    this.fetchCharacterStories = function(characterId) {
+        return $http.get(this.basePath + '/v1/public/characters/' + characterId + '/stories', {params: this.standardParams});
+
+    };
+    this.fetchCharacterEvents = function(characterId) {
+        return $http.get(this.basePath + '/v1/public/characters/' + characterId + '/events', {params: this.standardParams});
+
+    };
+    this.fetchCharacterSeries = function(characterId) {
+        return $http.get(this.basePath + '/v1/public/characters/' + characterId + '/series', {params: this.standardParams});
+
+    };
+
 });
