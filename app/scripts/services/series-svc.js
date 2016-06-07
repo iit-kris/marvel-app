@@ -6,7 +6,11 @@ marvelApp.service('SeriesService', function($http) {
         ts: '00',
         hash: '579ee81a9d0c7ce3e3fc5ec42dfec338'
     },
-    this.fetchSeries = function() {
-        return $http.get(this.basePath + '/v1/public/series', {params: this.standardParams});
+    this.fetchSeries = function(seriesParams) {
+        angular.extend(seriesParams, this.standardParams);
+        return $http.get(this.basePath + '/v1/public/series', {params: seriesParams});
+    },
+    this.fetchSeriesDetails = function(seriesId) {
+        return $http.get(this.basePath + '/v1/public/series/' + seriesId, {params: this.standardParams});
     };
 });
