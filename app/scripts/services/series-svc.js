@@ -13,4 +13,20 @@ marvelApp.service('SeriesService', function($http) {
     this.fetchSeriesDetails = function(seriesId) {
         return $http.get(this.basePath + '/v1/public/series/' + seriesId, {params: this.standardParams});
     };
+    this.fetchSeriesComics = function(seriesId) {
+        return $http.get(this.basePath + '/v1/public/series/' + seriesId + '/comics', {params: this.standardParams});
+
+    };
+    this.fetchSeriesStories = function(seriesId) {
+        return $http.get(this.basePath + '/v1/public/series/' + seriesId + '/stories', {params: this.standardParams});
+
+    };
+    this.fetchSeriesCharacters = function(seriesId) {
+        return $http.get(this.basePath + '/v1/public/series/' + seriesId + '/characters', {params: this.standardParams});
+
+    };
+    this.fetchSeriesEvents = function(seriesId) {
+        return $http.get(this.basePath + '/v1/public/series/' + seriesId + '/events', {params: this.standardParams});
+
+    };
 });

@@ -1,6 +1,6 @@
 <div class="list-group series">
     <a href="#/series_details/{{seriesEntry.id}}" class="list-group-item" ng-repeat="seriesEntry in series" ng->
-        <img width="100px" height="100px" src="{{seriesEntry.thumbnail.path}}.jpg" />
+        <img width="100px" height="100px" ng-src="{{seriesEntry.thumbnail.path}}.jpg" />
         <h4 class="list-group-item-heading">{{ seriesEntry.title }}</h4>
         <p class="list-group-item-text" ng-show="!!seriesEntry.rating">Rating: <strong>{{seriesEntry.rating}}</strong></p>
     </a>

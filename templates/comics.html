@@ -1,0 +1,11 @@
+<div>
+    <h4 ng-show="detailedList && detailedList.length > 0">Comics</h4>
+    <div ng-show="detailedList && detailedList.length > 0" class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3" ng-repeat="comic in detailedList"}}>
+            <a href="#" class="thumbnail">
+                <img data-ng-src="{{comic.thumbnail.path}}.{{comic.thumbnail.extension}}" alt="{{comic.title}}" /> {{comic.title}}
+            </a>
+
+        </div>
+    </div>
+</div>
